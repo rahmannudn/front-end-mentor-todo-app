@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--end google font -->
+
+    <!-- tailwind output -->
+    <link rel="stylesheet" href="./output.css" />
+    <!-- end tailwind output -->
+
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body
+    class="w-full min-h-screen font-js bg-veryLightGrayishBlue bg-[length:100vw_15rem] bg-no-repeat bg-[0% 0%] bg-[url('./images/bg-mobile-light.jpg')] dark:bg-[url('./images/bg-mobile-dark.jpg')] md:bg-[url('./images/bg-desktop-light.jpg')] md:dark:bg-[url('./images/bg-desktop-dark.jpg')] dark:bg-veryDarkBlue relative"
+  >
+    <main class="container w-[90%] max-w-2xl mx-auto pt-20">
+      <div class="header flex flex-row justify-between items-center">
+        <h1 class="font-bold text-veryLightGray text-3xl tracking-[1rem]">
+          TODO
+        </h1>
+        <button id="theme-toggle" class="flex light">
+          <img
+            id="icon-toggle"
+            src="./images/icon-moon.svg"
+            alt="toggle icon"
+            class="cursor-pointer"
+          />
+        </button>
+      </div>
+      <!-- new todo -->
+      <div
+        class="flex flex-row items-center gap-x-4 p-5 bg-veryLightGray rounded-md mt-10 dark:bg-veryDarkDesaturatedBlue"
+      >
+        <div
+          class="w-6 h-6 bg-transparent border-[1px] border-darkGrayishBlue rounded-full"
+        ></div>
+        <input
+          type="text"
+          class="w-full px-0 h-7 bg-transparent border-none focus:border-none focus:ring-0 text-lg text-slate-700 dark:text-slate-300 input-todo"
+          placeholder="Create a new todo ..."
+        />
+      </div>
+
+      <!-- end new todo -->
+      <div
+        class="todos-list w-full mt-10 text-veryDarkGrayishBlue drop-shadow-2xl"
+      >
+        <!-- start todo item -->
+
+        <!-- end todo item -->
+      </div>
+      <div
+        class="bg-veryLightGray text-darkGrayishBlue p-5 py-3 flex flex-row items-center justify-between rounded-br-md rounded-bl-md text-sm dark:bg-veryDarkGrayishBlue2"
+      >
+        <p><span class="todos-length">0</span> items left</p>
+        <ul
+          class="todos-section flex flex-row items-center justify-center gap-x-2 md:gap-x-4"
+        >
+          <li
+            class="section cursor-pointer text-transparent bg-clip-text bg-gradient-to-br from-firstGradientColor to-secondGradientColor font-bold section-active"
+          >
+            All
+          </li>
+          <li class="section cursor-pointer hover:text-black">Active</li>
+          <li class="section cursor-pointer hover:text-black">Completed</li>
+        </ul>
+        <button
+          class="btn-clear bg-transparent border-none outline-none hover:text-black"
+        >
+          Clear Completed
+        </button>
+      </div>
+
+      <!-- items left All Active Completed Clear Completed Drag and drop to reorder
+      list -->
+    </main>
+    <!-- Add dynamic number -->
+
+    <footer
+      class="absolute bottom-0 left-0 w-full bg-slate-300 text-lg text-slate-800 text-center p-3"
+    >
+      this app idea is coming from
+      <a
+        class="underline text-blue-700"
+        href="https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW/hub"
+        >front end mentor challenge</a
+      >
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

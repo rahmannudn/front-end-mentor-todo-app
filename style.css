@@ -1,0 +1,14 @@
+:root {
+  --veryLightGray: "hsl(0, 0%, 98%)";
+}
+
+.bg-dekstopLight {
+  /* background: var(--veryLightGray) url("./images/bg-desktop-light.jpg")
+    no-repeat 0% 0%/100vw 30rem; */
+
+  background-image: url(images/bg-desktop-light.jpg);
+  background-color: var(--veryLightGray);
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: 100vw 15rem;
+}
